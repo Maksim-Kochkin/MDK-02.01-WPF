@@ -1,0 +1,34 @@
+﻿<Window x:Name="MainFormEx2" x:Class="Упражнение__2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Упражнение__2"
+        mc:Ignorable="d"
+        Title="Упражнение 2" Height="450" Width="800" Background="#FFBED3FF">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="stackPanel" Grid.Row="0">
+            <CheckBox x:Name="checkBox1" IsThreeState="True" IsChecked="False" Height="20" Content="Неотмечено" FontFamily="Microsoft YaHei UI" FontSize="16" />
+            <CheckBox x:Name="checkBox2" IsThreeState="True" IsChecked="True" Height="20" Content="Отмечено" FontFamily="Microsoft YaHei UI" FontSize="16" />
+            <CheckBox x:Name="checkBox3" IsThreeState="True" IsChecked="{x:Null}" Height="20" Content="Неопределено" FontFamily="Microsoft YaHei UI" FontSize="16" />
+            <CheckBox x:Name="checkBox" IsChecked="False" Height="20" Content="Флажок"
+            IsThreeState="True"
+            Unchecked="checkBox_Unchecked"
+            Indeterminate="checkBox_Indeterminate"
+            Checked="checkBox_Checked" />
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <RadioButton GroupName="Languages" Content="C#" IsChecked="True" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Languages" Content="VB.NET" />
+            <RadioButton GroupName="Languages" Content="C++" />
+            <RadioButton GroupName="Technologies" Content="WPF" IsChecked="True" />
+            <RadioButton GroupName="Technologies" Content="WinForms" />
+            <RadioButton GroupName="Technologies" Content="ASP.NET" Checked="RadioButton_Checked" />
+        </StackPanel>
+    </Grid>
+</Window>
