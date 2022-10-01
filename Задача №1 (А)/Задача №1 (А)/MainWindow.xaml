@@ -1,0 +1,30 @@
+﻿<Window x:Class="Задача__1__А_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задача__1__А_"
+        mc:Ignorable="d"
+        Title="Стоимость поездки" Height="460" Width="570" Background="#FF9DB3BF" MinWidth="560" MinHeight="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="ExtBtn" Content="Выход" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Center" Width="167" Height="44" Background="#FFC39494" FontSize="22" FontFamily="Microsoft YaHei" Click="ExtBtn_Click"/>
+        <CheckBox x:Name="ToAndHomeCheck" IsChecked="False" Content="Туда и обратно" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="30" Width="164" FontSize="18" FontFamily="Microsoft YaHei" Foreground="#FF105310" BorderBrush="#FF105310" Background="White"/>
+        <Label Content="Расстояние (км)" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="174" FontSize="20" Height="46" FontFamily="Microsoft YaHei UI"/>
+        <Label Content="Цена бензина (руб/литр)" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="267" FontSize="20" Height="66" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+        <Label Content="Потребление бензина &#xD;&#xA;(литр/100км)" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="267" FontSize="20" Height="66" FontFamily="Microsoft YaHei UI" Grid.Row="2"/>
+        <Button x:Name="SumBtn" Content="Рассчитать" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Width="167" Height="44" Background="#FFC39494" FontSize="22" FontFamily="Microsoft YaHei" Click="SumBtn_Click"/>
+        <Button x:Name="ClearBtn" Content="Очистить" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="167" Height="44" Background="#FFC39494" FontSize="22" FontFamily="Microsoft YaHei" Click="Button_Click"/>
+        <TextBox x:Name="RasstTb" HorizontalAlignment="Right" Height="22"  VerticalAlignment="Center" TextWrapping="Wrap" Width="200" FontFamily="Microsoft YaHei UI" FontSize="14" Background="#FFABCBAF" TextChanged="TextBox_TextChanged" />
+        <TextBox x:Name="PriceTb" HorizontalAlignment="Right" Height="22"  VerticalAlignment="Center" TextWrapping="Wrap" Width="200" FontFamily="Microsoft YaHei UI" FontSize="14" Grid.Row="1" Background="#FFABCBAF" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="TrataTb" HorizontalAlignment="Right" Height="22"  VerticalAlignment="Center" TextWrapping="Wrap" Width="200" FontFamily="Microsoft YaHei UI" FontSize="14" Grid.Row="2" Background="#FFABCBAF" TextChanged="TextBox_TextChanged_2"/>
+        <Label Content="Итого необходимо:" HorizontalAlignment="Left"  Grid.Row="3" VerticalAlignment="Center" FontSize="18" FontFamily="Microsoft YaHei UI"/>
+        <Label x:Name="ResultLb" Content="" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" FontSize="18" FontFamily="Microsoft YaHei UI"/>
+    </Grid>
+</Window>
