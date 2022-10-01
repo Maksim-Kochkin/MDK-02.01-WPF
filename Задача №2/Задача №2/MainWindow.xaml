@@ -1,0 +1,19 @@
+﻿<Window x:Name="ColorForm" x:Class="Задача__2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задача__2"
+        mc:Ignorable="d"
+        Title="Цветные флажки" Height="295" Width="495">
+    <Grid>
+        <GroupBox x:Name="TypeGB" Header="Выберите цвет:" HorizontalAlignment="Left" VerticalAlignment="Center" Height="172" Grid.Row="1" Width="221" FontSize="16" FontFamily="Microsoft YaHei UI" BorderBrush="#FF4FA0D1" Foreground="#FF4C3985" FontWeight="Bold">
+            <StackPanel x:Name="TypeSP">
+                <RadioButton x:Name="RedRB" Content="Красный" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1" Checked="ChokoladeRB_Checked"/>
+                <RadioButton x:Name="BlueRB" Content="Синий" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1" Checked="BlueRB_Checked"/>
+                <RadioButton x:Name="GreenRB" Content="Зелёный" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1" Checked="GreenRB_Checked"/>
+            </StackPanel>
+        </GroupBox>
+        <Rectangle x:Name="ColorRect" Fill="White" HorizontalAlignment="Left" Height="157" Margin="226,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="251"/>
+    </Grid>
+</Window>
