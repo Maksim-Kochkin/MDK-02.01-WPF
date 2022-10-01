@@ -1,0 +1,47 @@
+﻿<Window x:Name="HeadForm" x:Class="Задача__1__В_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задача__1__В_"
+        mc:Ignorable="d"
+        Title="Покупка мороженного" Height="520" Width="480" MinWidth="520" MinHeight="480" Background="#FFC7A3A3">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="350*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="HiLB" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Сделайте свой заказ!" FontSize="24" FontFamily="Microsoft YaHei UI" Foreground="#FF2D3985" FontWeight="Bold" FontStyle="Italic"/>
+        <Label x:Name="InfoLb" Grid.Row="2"  HorizontalAlignment="Center" VerticalAlignment="Center" Content="Итого к оплате:" FontSize="24" FontFamily="Microsoft YaHei UI" Foreground="#FF2D3985" FontWeight="Bold" />
+        <TextBox x:Name="ResultTb" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Microsoft YaHei UI" Width="236" TextChanged="ResultTb_TextChanged"/>
+        <GroupBox x:Name="TypeGB" Header="Вид мороженного:" HorizontalAlignment="Center" Height="172" Grid.Row="1" VerticalAlignment="Top" Width="221" FontSize="16" FontFamily="Microsoft YaHei UI" BorderBrush="#FF4FA0D1" Foreground="#FF4C3985" FontWeight="Bold">
+            <StackPanel x:Name="TypeSP">
+                <RadioButton x:Name="ChokoladeRB" Content="Шоколадное" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+                <RadioButton x:Name="VanileRB" Content="Ванильное" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+                <RadioButton x:Name="PlombireRB" Content="Пломбирное" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="TopingsGB" Header="Наполнитель:" HorizontalAlignment="Center" Height="172" Grid.Row="1" VerticalAlignment="Top" Width="221" FontSize="16" FontFamily="Microsoft YaHei UI" BorderBrush="#FF4FA0D1" Foreground="#FF4C3985" FontWeight="Bold" Grid.Column="1">
+            <StackPanel x:Name="TopingsSP">
+                <CheckBox x:Name="SiropCB" Content="Сироп" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="19" FontFamily="Microsoft YaHei UI"/>
+                <CheckBox x:Name="OrehRB" Content="Орехи" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="19" FontFamily="Microsoft YaHei UI"/>
+                <CheckBox x:Name="ChocolCropCB" Content="Шоколадн. крошка" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="19" FontFamily="Microsoft YaHei UI"/>
+                <CheckBox x:Name="BerryCB" Content="Ягоды" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="19" FontFamily="Microsoft YaHei UI"/>
+                <CheckBox x:Name="FruictCB" Content="Фрукты" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" FontSize="19" FontFamily="Microsoft YaHei UI"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="SizeGB" Header="Размер:" HorizontalAlignment="Center" Height="172" Grid.Row="1" VerticalAlignment="Bottom" Width="220" FontSize="16" FontFamily="Microsoft YaHei UI" BorderBrush="#FF4FA0D1" Foreground="#FF4C3985" FontWeight="Bold" Margin="18,0">
+            <StackPanel x:Name="SizeSP">
+                <RadioButton x:Name="BigRB" Content="Большой" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+                <RadioButton x:Name="MiddleRB" Content="Средний" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+                <RadioButton x:Name="SmallRB" Content="Малый" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Microsoft YaHei UI" Grid.Row="1"/>
+            </StackPanel>
+        </GroupBox>
+        
+    </Grid>
+</Window>
